@@ -28,4 +28,29 @@ Pour se faire vous devrez vous rendre dans le PHP installé avec Xampp au chemin
 
 **C:\xampp\php**  
 
+Vous y trouverez le fichier php.exe  
+ - Faites un clic droit sur ce fichier, cliquez sur *copier en tant que chemin d'accès* (ctrl + shift + C sur Windows)
+
+Vous allez ensuite devoir modifier le **Path** de vos variables d'environnement en suivant cette procédure :  
+*Sur Windows**
+ - Cliquer sur le menu démarrer.
+ - Dans la barre de recherche écrivez "variables d'environnement"
+ - Cliquez sur l'icône "Modifier les variables d'environnement système"
+ - Vous êtes à présent dans le menu des **Propriétés système**
+ - Cliquez sur le bouton "Variables d'environnement..."
+ - Dans le 1er bloc appelé "Variables utilisateurs pour *username*" , cliquez sur **Path**, puis cliquez sur le bouton "Nouvelle..."
+ - Appelez votre variable PHP dans le Nom de la variable
+ - Faites un ctrl + V (chemin d'accès de php.exe vu plus haut) dans "Valeur de la variable et cliquez sur OK
+
+Vous avez configuré correctement la variable d'environnement pour faire fonctionner PHP sur votre machine.
+
+# XAMPP
+
+Vous allez ensuite démarrer Xampp que vous avez préalablement installé sur votre machine.  
+Une fois Xampp démarré vous devrez cliquer sur le bouton config à la ligne **Apache**, puis cliquez sur PHP(php.ini).  
+Ceci vous ouvrira un bloc-note par défaut du fichier php.ini , faites un ctrl + F et dans la barre de recherche écrivez zip puis Entrée  
+vous allez arriver sur une ligne qui doit ressembler à : **;extension=zip** , retirez le ";" et sauvegardez le fichier, cela décommentera la ligne et rendra l'extension zip utilisable
+dans votre workspace.  
+
+Retournez ensuite sur Xampp et cliquez sur les boutons Start pour Apache et MySQL.
 
